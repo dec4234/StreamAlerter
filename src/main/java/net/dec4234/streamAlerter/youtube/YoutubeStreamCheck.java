@@ -1,5 +1,6 @@
-package net.dec4234.streamMonitor.src;
+package net.dec4234.streamAlerter.youtube;
 
+import net.dec4234.streamAlerter.framework.YoutubeStreamEvent;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -84,8 +85,6 @@ public class YoutubeStreamCheck {
 
 	public boolean isStreaming() {
 		String link = getCanonicalLink();
-
-		System.out.println("ping" + count++);
 
 		if(link == null) {
 			return false;
